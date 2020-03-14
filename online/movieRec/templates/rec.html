@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>推荐结果页</title>
+	<style>
+		.recImg{
+			width: 240px;
+			height: 360px;
+			margin: 10px;
+		}
+    </style>
+</head>
+<body>
+<h2>为你推荐：</h2>
+<div style="text-align: left">
+	{%for img in data%}
+	 <a href=""}><img class="recImg" src={{ img }} alt=""></a>
+	{%endfor%}
+</div>
+</body>
+</html>

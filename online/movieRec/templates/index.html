@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+	<style>
+		.recImg{
+			width: 240px;
+			height: 360px;
+			margin: 10px;
+		}
+    </style>
+</head>
+<body>
+<h1 style="color: blue">电影推荐系统</h1>
+<form method="post" action="/rec">
+    {% csrf_token %}
+    用户名：<input type="number" name="userid">
+    密码：<input type="number" name="password">
+    <input type="submit" value="登录">
+</form>
+<h2>热门电影：</h2>
+<div style="text-align: center">
+    <a href="https://www.imdb.com/title/tt0114709/videoplayer/vi2052129305?ref_=tt_ov_vi">
+        <img class="recImg" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/rhIRbceoE9lR4veEXuwCC2wARtG.jpg" alt="">
+    </a>
+    <a href="">
+        <img class="recImg" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/gNJm4egHC4MQVXYY9F3dXoLcNec.jpg" alt="">
+    </a>
+    <a href="">
+        <img class="recImg" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/6ksm1sjKMFLbO7UY2i6G1ju9SML.jpg" alt="">
+    </a>
+    <a href="">
+        <img class="recImg" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/4wjGMwPsdlvi025ZqR4rXnFDvBz.jpg" alt="">
+    </a>
+    <a href="">
+        <img class="recImg" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/e64sOI48hQXyru7naBFyssKFxVd.jpg" alt="">
+    </a>
+</div>
+</body>
+</html>
